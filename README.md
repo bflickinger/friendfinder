@@ -1,4 +1,4 @@
-# Friend Finder - Node and Express Servers
+# Friend Finder - Find a compatible buddy!
 
 ### Overview
 
