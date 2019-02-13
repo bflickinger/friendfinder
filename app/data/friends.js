@@ -3,7 +3,7 @@
 let friendsArray = [
     {
         name: 'Anna',
-        photo: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+        photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Anna_Kendrick_March_22%2C_2014_%28cropped%29.jpg/330px-Anna_Kendrick_March_22%2C_2014_%28cropped%29.jpg',
         scores: [
             '3',
             '2',
@@ -19,7 +19,7 @@ let friendsArray = [
     },
     {
         name: 'Bob',
-        photo: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+        photo: 'https://blogs-images.forbes.com/cherylsnappconner/files/2014/10/robert-johnson_-1030x685.jpg',
         scores: [
             '2',
             '1',

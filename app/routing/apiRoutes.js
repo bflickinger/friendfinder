@@ -11,11 +11,11 @@ module.exports = function (app) {
     //Add new friend
     app.post('/api/friends', function(req, res) {
         let appAnswers = (req.body).scores;
-
+        // console.log('req.body: ' + req.body);
         //Matching
         let friendName = '';
-        let friendPic = '';
-        let difference = 10000;
+        let friendPhoto = '';
+        let difference = 100;
 
         for (let i=0; i < friends.length; i++) {
             let temp = 0;
@@ -27,10 +27,14 @@ module.exports = function (app) {
             if(temp < difference) {
                 difference = temp;
                 friendName = friends[i].name;
-                friendPic = friends[i].photo;
+                friendPhoto = friends[i].photo;
+                // console.log('Match found!');
             }
+            
+            // console.log(friendName);
+            // console.log(friendPhoto);
         }
-
-        res.json({status: 'ok', friendName: friendName, friendPic: friendPic});
+        friends.push(req.body);
+        res.json({status: true, name: friendName, photo: friendPhoto});
     });
 };
